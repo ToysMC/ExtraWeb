@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="var(--accent-color)">
+    <meta name="defaultLanguage" content="en-US">
+    <meta name="availableLanguages" content="en-US">
+    <title>AluminumOS</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="localization" href="locales/{locale}.ftl">
+    <link rel="stylesheet" type="text/css" href="style/layout.css">
+    <link rel="stylesheet" type="text/css" href="style/buttons.css">
+    <link rel="stylesheet" type="text/css" href="style/keyart.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="js/l20n.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="headerbar">
+      <img src="favicon.png" alt="" class="headerbar-favicon">
+      <a href="index.html" class="headerbar-holder-link">
+        <img src="images/brand.png" alt="" class="headerbar-home">
+      </a>
+      <button class="headerbar-button" disabled="" data-l10n-id="website-signIn"></button>
+    </div>
+    <div class="content">
+      <div id="sidebar">
+        <button class="list" data-webpage="index">
+          <img src="images/home.png" alt="">
+          <p data-l10n-id="website-homePage"></p>
+        </button>
+        <button class="list" data-webpage="downloads">
+          <img src="images/downloads.png" alt="">
+          <p data-l10n-id="website-downloads"></p>
+        </button>
+        <hr>
+        <button class="list" data-webpage="support">
+          <img src="images/support.png" alt="">
+          <p data-l10n-id="website-support"></p>
+        </button>
+      </div>
+      <iframe src="pages/index.html" frameborder="0" id="frame"></iframe>
+      <div class="footer">
+        <div class="footer-child">
+          <h1>Important</h1>
+          <p>Please read before using our products.</p>
+          <a href="tos.txt">Terms of Service</a>
+          <a href="pp.txt">Privacy Policy</a>
+        </div>
+        <div class="footer-child">
+          <h1>Hyperlinks</h1>
+          <p>Links to our content accounts.</p>
+          <a href="http://www.github.com/wos-org">Via GitHub</a>
+          <a href="http://www.twitter.com/@Killer0Mortada">Via Twitter</a>
+          <a href="https://discord.gg/G4unQh43Qe">Via Discord</a>
+        </div>
+        <div class="footer-child">
+          <h1>Don</h1>
+          <h1>Don</h1>
+        </div>
+        <div class="footer-child">
+          <h1>About Us</h1>
+          <p>We are guys and a girl.</p>
+          <a href="credits.txt">Credits</a>
+        </div>
+      </div>
+      <div id="discord-chat">
+        <iframe src="https://discord.com/widget?id=901236370834591755&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+    </div>
+  </body>
+</html>

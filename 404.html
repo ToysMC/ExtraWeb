@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="var(--accent-color)">
+    <meta name="defaultLanguage" content="ar-SA">
+    <meta name="availableLanguages" content="ar-SA en-US">
+    <link rel="icon" type="image/svg" href="favicon.svg">
+    <link rel="localization" href="locales/{locale}.ftl">
+    <link rel="stylesheet" type="text/css" href="style/layout.css">
+    <link rel="stylesheet" type="text/css" href="style/keyart.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="js/l20n.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="headerbar">
+      <img src="favicon.svg" alt="" class="headerbar-favicon">
+      <a href="/" class="headerbar-holder-link">
+        <img src="images/brand.png" alt="" class="headerbar-home">
+      </a>
+      <button class="headerbar-button" data-l10n-id="website-checkUpdates"></button>
+    </div>
+    <div class="content">
+      <div class="keyart">
+        <div class="keyart-anim">
+          <span class="keyart-bubble1"></span>
+          <span class="keyart-bubble2"></span>
+          <span class="keyart-bubble3"></span>
+          <span class="keyart-bubble4"></span>
+          <div class="keyart-desktop">
+            <div class="keyart-taskbar"></div>
+          </div>
+        </div>
+        <div class="keyart-context">
+          <h1 data-l10n-id="website-error-title"></h1>
+          <p data-l10n-id="website-error-detail"></p>
+          <a href="/" data-l10n-id="website-error-back"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

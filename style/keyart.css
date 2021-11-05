@@ -1,0 +1,134 @@
+@keyframes bubble {
+  0% {
+    transform: translate(8px, 0);
+  }
+  12.5% {
+    transform: translate(6px, 6px);
+  }
+  25% {
+    transform: translate(0, 8px);
+  }
+  37.5% {
+    transform: translate(-6px, 6px);
+  }
+  50% {
+    transform: translate(-8px, 0);
+  }
+  62.5% {
+    transform: translate(-6px, -6px);
+  }
+  75% {
+    transform: translate(0, -8px);
+  }
+  87.5% {
+    transform: translate(6px, -6px);
+  }
+  100% {
+    transform: translate(8px, 0);
+  }
+}
+.keyart {
+  box-sizing: border-box;
+  padding: 2rem 4rem;
+  width: 100%;
+  height:
+}
+.keyart-anim,
+.keyart-context {
+  aspect-ratio: 1/1;
+  float: var(--float-dir-start);
+  width: 50%;
+  position: relative;
+}
+.keyart-bubble1 {
+  animation: bubble 15s linear infinite;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(-45deg, #0040ff, #00c0ff);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 2em;
+  top: 6em;
+  width: 25%;
+}
+.keyart-bubble2 {
+  animation: bubble 15s ease infinite;
+  animation-delay: 250ms;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(-45deg, #a04000, #ffc000);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 6em;
+  top: 4em;
+  width: 25%;
+}
+.keyart-bubble3 {
+  animation: bubble 15s ease infinite;
+  animation-delay: 500ms;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(-45deg, #a01010, #ff4040);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: 6em;
+  bottom: 4em;
+  width: 25%;
+}
+.keyart-bubble4 {
+  animation: bubble 15s ease infinite;
+  animation-delay: 750ms;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(-45deg, #208020, #40c040);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 2em;
+  bottom: 6em;
+  width: 25%;
+}
+.keyart-context {
+  box-sizing: border-box;
+  padding: 12.5% 2rem;
+}
+.keyart-desktop {
+  aspect-ratio: 16/9;
+  background-color: #000000;
+  background-image: url("https://source.unsplash.com/random");
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 #000000;
+  overflow: hidden;
+  position: absolute;
+  left: 12.5%;
+  top: 27.5%;
+  width: 75%;
+}
+.keyart-taskbar {
+  background-color: var(--main-color-light);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+}
+.keyart-taskbar:before {
+  background-color: var(--main-color-medium);
+  border-radius: 2rem;
+  content: "";
+  position: absolute;
+  left: 2.5%;
+  bottom: 25%;
+  width: 20%;
+  height: 50%;
+}
+.keyart-taskbar:after {
+  background-color: var(--main-color-medium);
+  border-radius: 2rem;
+  content: "";
+  position: absolute;
+  right: 2.5%;
+  bottom: 25%;
+  width: 15%;
+  height: 50%;
+}
